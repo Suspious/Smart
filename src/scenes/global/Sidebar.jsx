@@ -1,36 +1,31 @@
- import { useState } from "react";
+import { useState } from "react";
 import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import "react-pro-sidebar/dist/css/styles.css";
 import { tokens } from "../../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
-import ReportGmailerrorredIcon from '@mui/icons-material/ReportGmailerrorred';
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
-import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
-import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutlined";
-import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
-import SensorsIcon from '@mui/icons-material/Sensors';
-import WavesIcon from '@mui/icons-material/Waves';
-import { COLUMNS_DIMENSION_PROPERTIES } from "@mui/x-data-grid/hooks/features/columns/gridColumnsUtils";
+import { ReactComponent as SensorsIcon } from './icon/house-chimney.svg'; // Corrected import
+
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+
   return (
     <MenuItem
       active={selected === title}
       style={{
-        color: selected === title? colors.text[200]: "#B7B7B7",
+        color: selected === title ? colors.text[200] : "#B7B7B7",
+        fontSize: "18px", // Increased font size for menu items
       }}
       onClick={() => setSelected(title)}
-      icon={icon}
+      icon={<Box sx={{ fontSize: "30px" }}>{icon}</Box>} // Increased icon size
     >
-      <Typography>{title}</Typography>
+      <Typography fontSize="18px">{title}</Typography> {/* Increased text size */}
       <Link to={to} />
     </MenuItem>
   );
@@ -40,29 +35,29 @@ const Sidebar = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const [selected, setSelected, color ="#f36617"] = useState("SmartSwitch");
+  const [selected, setSelected] = useState("SmartSwitch");
 
   return (
     <Box
       sx={{
-      //  position: "fixed", // Make sidebar fixed
-        right: 0, // Align it to the right
+        right: 0,
         top: 0,
         height: "100vh", // Full height of the viewport
         "& .pro-sidebar-inner": {
-          background: "colors.primary[300]",
+          background: colors.primary[300],
+          width: isCollapsed ? "80px" : "300px", // Adjusted sidebar width
         },
         "& .pro-icon-wrapper": {
           backgroundColor: "transparent !important",
         },
         "& .pro-inner-item": {
-          padding: "5px 35px 5px 20px !important",
+          padding: "10px 35px 10px 20px !important", // More padding for spacing
         },
         "& .pro-inner-item:hover": {
-          color: "#B7B7B7",
+          color: "#fff", // White on hover for better visibility
         },
         "& .pro-menu-item.active": {
-          color: "#B7B7B7",
+          color: "#f36617 !important", // Active menu item color
         },
       }}
     >
@@ -71,7 +66,7 @@ const Sidebar = () => {
           {/* LOGO AND MENU ICON */}
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
-            icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
+            icon={isCollapsed ? <MenuOutlinedIcon style={{ fontSize: "30px" }} /> : undefined}
             style={{
               margin: "10px 0 20px 0",
               color: colors.text[100],
@@ -84,100 +79,53 @@ const Sidebar = () => {
                 alignItems="center"
                 ml="15px"
               >
-                <Typography variant="h3" color={colors.text[100]}>
+                <Typography variant="h3" color={colors.text[100]} fontSize="24px"> {/* Increased font size */}
                   Van der Leun
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
-                  <MenuOutlinedIcon />
+                  <MenuOutlinedIcon style={{ fontSize: "50px" }} /> {/* Larger menu icon */}
                 </IconButton>
               </Box>
             )}
           </MenuItem>
 
-          <Box padsdingLeft={isCollapsed ? undefined : "10%"}>
-            <Typography  
-              variant="h6"
-              color="#B7B7B7"
-              sx={{ m: "15px 0 5px 20px" }}
-            />
+          <Box paddingLeft={isCollapsed ? undefined : "10%"}>
             <Item
               title="SmartSwitch"
               to="/"
-              icon={<HomeOutlinedIcon />}
+              icon={<HomeOutlinedIcon style={{ fontSize: "50px" }} />} // Larger icon
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Group overview"
               to="/team"
-              icon={<SensorsIcon />}
+              icon={<SensorsIcon  />} // Larger icon
               selected={selected}
               setSelected={setSelected}
             />
-
             <Typography
               variant="h6"
-              color="colors.text[100]"
+              color={colors.text[100]}
               sx={{ m: "15px 0 5px 20px" }}
+              fontSize="18px" // Increased section header size
             >
               Pages
-            </Typography> 
+            </Typography>
             <Item
               title="Calendar"
               to="/calendar"
-              icon={<CalendarTodayOutlinedIcon />}
+              icon={<CalendarTodayOutlinedIcon style={{ fontSize: "50px" }} />} // Larger icon
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Info"
               to="/faq"
-              icon={<HelpOutlineOutlinedIcon />}
+              icon={<HelpOutlineOutlinedIcon style={{ fontSize: "50px" }} />} // Larger icon
               selected={selected}
               setSelected={setSelected}
             />
-            {/* <Item
-              title="Help contacts"
-              to="/contacts"
-              icon={<ContactsOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            /> */}
-            {/* <Typography
-              variant="h6"
-              color={colors.blueAccent[400]}
-              sx={{ m: "15px 0 5px 20px" }}
-            > */}
-              {/* Charts
-            </Typography>
-            <Item
-              title="Bar Chart"
-              to="/bar"
-              icon={<BarChartOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Pie Chart"
-              to="/pie"
-              icon={<PieChartOutlineOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Line Chart"
-              to="/line"
-              icon={<TimelineOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Geography Chart"
-              to="/geography"
-              icon={<MapOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            /> */}
           </Box>
         </Menu>
       </ProSidebar>
