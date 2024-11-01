@@ -8,8 +8,7 @@ import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import { ReactComponent as SensorsIcon } from './icon/house-chimney.svg'; // Corrected import
-
+import { ReactComponent as SensorsIcon } from './icon/house-chimney.svg'; // Adjust SVG import path as needed
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -20,12 +19,12 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
       active={selected === title}
       style={{
         color: selected === title ? colors.text[200] : "#B7B7B7",
-        fontSize: "18px", // Increased font size for menu items
+        fontSize: "16px", // Reduced font size for menu items
       }}
       onClick={() => setSelected(title)}
-      icon={<Box sx={{ fontSize: "30px" }}>{icon}</Box>} // Increased icon size
+      icon={<Box sx={{ fontSize: "24px" }}>{icon}</Box>} // Smaller icon size
     >
-      <Typography fontSize="18px">{title}</Typography> {/* Increased text size */}
+      <Typography fontSize="16px">{title}</Typography> {/* Reduced text size */}
       <Link to={to} />
     </MenuItem>
   );
@@ -45,13 +44,13 @@ const Sidebar = () => {
         height: "100vh", // Full height of the viewport
         "& .pro-sidebar-inner": {
           background: colors.primary[300],
-          width: isCollapsed ? "80px" : "300px", // Adjusted sidebar width
+          width: isCollapsed ? "80px" : "250px", // Adjusted sidebar width
         },
         "& .pro-icon-wrapper": {
           backgroundColor: "transparent !important",
         },
         "& .pro-inner-item": {
-          padding: "10px 35px 10px 20px !important", // More padding for spacing
+          padding: "8px 25px 8px 15px !important", // Smaller padding for more compact spacing
         },
         "& .pro-inner-item:hover": {
           color: "#fff", // White on hover for better visibility
@@ -66,7 +65,7 @@ const Sidebar = () => {
           {/* LOGO AND MENU ICON */}
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
-            icon={isCollapsed ? <MenuOutlinedIcon style={{ fontSize: "30px" }} /> : undefined}
+            icon={isCollapsed ? <MenuOutlinedIcon style={{ fontSize: "24px" }} /> : undefined} // Smaller icon size
             style={{
               margin: "10px 0 20px 0",
               color: colors.text[100],
@@ -79,11 +78,11 @@ const Sidebar = () => {
                 alignItems="center"
                 ml="15px"
               >
-                <Typography variant="h3" color={colors.text[100]} fontSize="24px"> {/* Increased font size */}
+                <Typography variant="h5" color={colors.text[100]} fontSize="20px"> {/* Adjusted font size */}
                   Van der Leun
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
-                  <MenuOutlinedIcon style={{ fontSize: "50px" }} /> {/* Larger menu icon */}
+                  <MenuOutlinedIcon style={{ fontSize: "30px" }} /> {/* Adjusted menu icon size */}
                 </IconButton>
               </Box>
             )}
@@ -93,14 +92,14 @@ const Sidebar = () => {
             <Item
               title="SmartSwitch"
               to="/"
-              icon={<HomeOutlinedIcon style={{ fontSize: "50px" }} />} // Larger icon
+              icon={<HomeOutlinedIcon style={{ fontSize: "24px" }} />} // Smaller icon size
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Group overview"
               to="/team"
-              icon={<SensorsIcon  />} // Larger icon
+              icon={<SensorsIcon style={{ width: "24px", height: "24px" }} />} // Specific size for SVG icon
               selected={selected}
               setSelected={setSelected}
             />
@@ -108,21 +107,21 @@ const Sidebar = () => {
               variant="h6"
               color={colors.text[100]}
               sx={{ m: "15px 0 5px 20px" }}
-              fontSize="18px" // Increased section header size
+              fontSize="16px" // Reduced section header size
             >
               Pages
             </Typography>
             <Item
               title="Calendar"
               to="/calendar"
-              icon={<CalendarTodayOutlinedIcon style={{ fontSize: "50px" }} />} // Larger icon
+              icon={<CalendarTodayOutlinedIcon style={{ fontSize: "24px" }} />} // Smaller icon size
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Info"
               to="/faq"
-              icon={<HelpOutlineOutlinedIcon style={{ fontSize: "50px" }} />} // Larger icon
+              icon={<HelpOutlineOutlinedIcon style={{ fontSize: "24px" }} />} // Smaller icon size
               selected={selected}
               setSelected={setSelected}
             />
