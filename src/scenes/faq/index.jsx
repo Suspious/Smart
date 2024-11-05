@@ -29,7 +29,7 @@ const FAQ = () => {
           Facebook: <a href="https://www.facebook.com/bvvanderleun/?locale=nl_NL" target="_blank" rel="noopener noreferrer">facebook</a><br/>
           Website: <a href="https://www.vanderleun.nl/nl/" target="_blank" rel="noopener noreferrer">Website</a><br/>
           
-          of kom langs bij Trapezium 170 in Sliedrecht!
+          or visit Trapezium 170 in Sliedrecht!
     
          
 

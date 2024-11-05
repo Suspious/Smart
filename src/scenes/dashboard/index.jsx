@@ -30,8 +30,8 @@ const Dashboard = () => {
     info@royalvanderleun.com<br/>
     +31 (0)184 413 288<br/>
     <a href="https://www.vanderleun.nl/nl/" target="_blank" rel="noopener noreferrer"style="color: Lightgray;">Website</a><br/>
-    <a href="https://www.instagram.com/royalvanderleun/" target="_blank" rel="noopener noreferrer"style="color: Lightgray;">instagram</a><br/>
-    <a href="https://www.facebook.com/bvvanderleun/?locale=nl_NL" target="_blank" rel="noopener noreferrer"style="color: Lightgray;">facebook</a><br/>
+    <a href="https://www.instagram.com/royalvanderleun/" target="_blank" rel="noopener noreferrer"style="color: Lightgray;">Instagram</a><br/>
+    <a href="https://www.facebook.com/bvvanderleun/?locale=nl_NL" target="_blank" rel="noopener noreferrer"style="color: Lightgray;">Facebook</a><br/>
   `;
 
   const locationInfo = `
