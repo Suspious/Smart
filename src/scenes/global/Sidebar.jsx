@@ -19,12 +19,12 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
       active={selected === title}
       style={{
         color: selected === title ? colors.text[200] : "#B7B7B7",
-        fontSize: "16px", // Reduced font size for menu items
+        fontSize: "18px", // Reduced font size for menu items
       }}
       onClick={() => setSelected(title)}
-      icon={<Box sx={{ fontSize: "24px" }}>{icon}</Box>} // Smaller icon size
+      icon={<Box sx={{ fontSize: "27px" }}>{icon}</Box>} // Smaller icon size
     >
-      <Typography fontSize="16px">{title}</Typography> {/* Reduced text size */}
+      <Typography fontSize="18px">{title}</Typography> {/* Reduced text size */}
       <Link to={to} />
     </MenuItem>
   );
@@ -65,7 +65,7 @@ const Sidebar = () => {
           {/* LOGO AND MENU ICON */}
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
-            icon={isCollapsed ? <MenuOutlinedIcon style={{ fontSize: "24px" }} /> : undefined} // Smaller icon size
+            icon={isCollapsed ? <MenuOutlinedIcon style={{ fontSize: "27px" }} /> : undefined} // Smaller icon size
             style={{
               margin: "10px 0 20px 0",
               color: colors.text[100],
@@ -82,7 +82,7 @@ const Sidebar = () => {
                   Van der Leun
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
-                  <MenuOutlinedIcon style={{ fontSize: "30px" }} /> {/* Adjusted menu icon size */}
+                  <MenuOutlinedIcon style={{ fontSize: "45px" }} /> {/* Adjusted menu icon size */}
                 </IconButton>
               </Box>
             )}
@@ -92,7 +92,7 @@ const Sidebar = () => {
             <Item
               title="SmartSwitch"
               to="/"
-              icon={<HomeOutlinedIcon style={{ fontSize: "24px" }} />} // Smaller icon size
+              icon={<HomeOutlinedIcon style={{ fontSize: "27px" }} />} // Smaller icon size
               selected={selected}
               setSelected={setSelected}
             />
@@ -107,21 +107,21 @@ const Sidebar = () => {
               variant="h6"
               color={colors.text[100]}
               sx={{ m: "15px 0 5px 20px" }}
-              fontSize="16px" // Reduced section header size
+              fontSize="18px" // Reduced section header size
             >
               Pages
             </Typography>
             <Item
               title="Calendar"
               to="/calendar"
-              icon={<CalendarTodayOutlinedIcon style={{ fontSize: "24px" }} />} // Smaller icon size
+              icon={<CalendarTodayOutlinedIcon style={{ fontSize: "27px" }} />} // Smaller icon size
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Info"
               to="/faq"
-              icon={<HelpOutlineOutlinedIcon style={{ fontSize: "24px" }} />} // Smaller icon size
+              icon={<HelpOutlineOutlinedIcon style={{ fontSize: "27px" }} />} // Smaller icon size
               selected={selected}
               setSelected={setSelected}
             />
