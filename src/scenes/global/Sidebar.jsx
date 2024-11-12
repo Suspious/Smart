@@ -44,7 +44,7 @@ const Sidebar = () => {
         height: "100vh", // Full height of the viewport
         "& .pro-sidebar-inner": {
           background: colors.primary[300],
-          width: isCollapsed ? "80px" : "250px", // Adjusted sidebar width
+          width: isCollapsed ? "80px" : "260px", // Adjusted sidebar width
         },
         "& .pro-icon-wrapper": {
           backgroundColor: "transparent !important",
