@@ -17,7 +17,7 @@ const FAQ = () => {
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
-            Contact Info
+            Contact Information
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -25,8 +25,8 @@ const FAQ = () => {
           Royal Van der Leun<br/>
           Mail: info@royalvanderleun.com<br/>
           Phone: <a href = {`tel:${"0184413288"}`} target="blank" rel="noopener noreferrer" > 0184 413 288</a> <br/>
-          Instagram: <a href="https://www.instagram.com/royalvanderleun/" target="_blank" rel="noopener noreferrer">instagram</a><br/>
-          Facebook: <a href="https://www.facebook.com/bvvanderleun/?locale=nl_NL" target="_blank" rel="noopener noreferrer">facebook</a><br/>
+          Instagram: <a href="https://www.instagram.com/royalvanderleun/" target="_blank" rel="noopener noreferrer">Instagram</a><br/>
+          Facebook: <a href="https://www.facebook.com/bvvanderleun/?locale=nl_NL" target="_blank" rel="noopener noreferrer">Facebook</a><br/>
           Website: <a href="https://www.vanderleun.nl/nl/" target="_blank" rel="noopener noreferrer">Website</a><br/>
           
           or visit Trapezium 170 in Sliedrecht!
@@ -40,7 +40,7 @@ const FAQ = () => {
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
-            FAQ and anwsers
+            FAQ and answers
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
