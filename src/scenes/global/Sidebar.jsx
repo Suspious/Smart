@@ -44,7 +44,7 @@ const Sidebar = () => {
         height: "100vh", // Full height of the viewport
         "& .pro-sidebar-inner": {
           background: colors.primary[300],
-          width: isCollapsed ? "80px" : "260px", // Adjusted sidebar width
+          width: isCollapsed ? "80px" : "270px", // Adjusted sidebar width
         },
         "& .pro-icon-wrapper": {
           backgroundColor: "transparent !important",
@@ -78,11 +78,11 @@ const Sidebar = () => {
                 alignItems="center"
                 ml="15px"
               >
-                <Typography variant="h5" color={colors.text[100]} fontSize="20px"> {/* Adjusted font size */}
+                <Typography variant="h5" color={colors.text[100]} fontSize="26px"> {/* Adjusted font size */}
                   Van der Leun
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
-                  <MenuOutlinedIcon style={{ fontSize: "45px" }} /> {/* Adjusted menu icon size */}
+                  <MenuOutlinedIcon style={{ fontSize: "35px" }} /> {/* Adjusted menu icon size */}
                 </IconButton>
               </Box>
             )}
@@ -99,7 +99,7 @@ const Sidebar = () => {
             <Item
               title="Group overview"
               to="/team"
-              icon={<SensorsIcon style={{ width: "24px", height: "24px" }} />} // Specific size for SVG icon
+              icon={<SensorsIcon style={{ width: "22px", height: "22px" }} />} // Specific size for SVG icon
               selected={selected}
               setSelected={setSelected}
             />
