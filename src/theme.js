@@ -21,9 +21,9 @@ export const tokens = (mode) => ({
         primary: {
           100: "#2e2e2e", // light gray
           200: "#242424", // darker gray
-          300: "#1b1b1b", // dark gray
-          400: "#2C2C2C", // almost black
-          500: "#1b1b1b", // deep black
+          300: "#24292e", // dark gray
+          400: "#24292e", // almost black
+          500: "#24292e", // deep black
           600: "#141414", // darker black
           700: "#080808", // very dark black
           800: "#050505", // almost pitch black
@@ -170,7 +170,7 @@ export const themeSettings = (mode) => {
               light: colors.grey[100],
             },
             background: {
-              default: "#2C2C2C",
+              default: "#2b3137",
             },
           }
         : {
