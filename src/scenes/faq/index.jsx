@@ -16,7 +16,7 @@ const FAQ = () => {
 
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography color={colors.greenAccent[500]} variant="h5">
+          <Typography color={colors.greenAccent[200]} variant="h5">
             Contact Info
           </Typography>
         </AccordionSummary>
@@ -29,7 +29,7 @@ const FAQ = () => {
           Facebook: <a href="https://www.facebook.com/bvvanderleun/?locale=nl_NL" target="_blank" rel="noopener noreferrer">facebook</a><br/>
           Website: <a href="https://www.vanderleun.nl/nl/" target="_blank" rel="noopener noreferrer">Website</a><br/>
           
-          or visit Trapezium 170 in Sliedrecht!
+          of kom langs bij Trapezium 170 in Sliedrecht!
     
          
 
@@ -39,7 +39,7 @@ const FAQ = () => {
       </Accordion>
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography color={colors.greenAccent[500]} variant="h5">
+          <Typography color={colors.greenAccent[200]} variant="h5">
             FAQ and anwsers
           </Typography>
         </AccordionSummary>
@@ -52,7 +52,7 @@ const FAQ = () => {
       </Accordion>
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography color={colors.greenAccent[500]} variant="h5">
+          <Typography color={colors.greenAccent[200]} variant="h5">
             Manuals
           </Typography>
         </AccordionSummary>
@@ -64,7 +64,7 @@ const FAQ = () => {
       </Accordion>
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography color={colors.greenAccent[500]} variant="h5">
+          <Typography color={colors.greenAccent[200]} variant="h5">
            Reset
           </Typography>
         </AccordionSummary>
@@ -76,7 +76,7 @@ const FAQ = () => {
       </Accordion>
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography color={colors.greenAccent[500]} variant="h5">
+          <Typography color={colors.greenAccent[200]} variant="h5">
             Settings
           </Typography>
         </AccordionSummary>

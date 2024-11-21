@@ -14,7 +14,7 @@ export const tokens = (mode) => ({
           600: "#525252",
           700: "#3d3d3d",
           800: "#292929",
-          900: "#141414",
+          900: "black",
           1000:"#000000",
           1100: "#004f9f",
         },
@@ -24,7 +24,7 @@ export const tokens = (mode) => ({
           300: "#24292e", // dark gray
           400: "#24292e", // almost black
           500: "#24292e", // deep black
-          600: "#141414", // darker black
+          600: "black", // darker black
           700: "#080808", // very dark black
           800: "#050505", // almost pitch black
           900: "#030303",  // darker darkest navy blue
@@ -108,7 +108,7 @@ export const tokens = (mode) => ({
           200: "#1e54ae", // light blue
           300: "#1e54ae", // soft blue
           400: "#1e54ae", // pastel blue
-          500: "#004f9f", // vibrant blue
+          500: "#fff", // vibrant blue
           600: "#1e54ae", // royal blue
           700: "#1e54ae", // deep blue
           800: "#1e54ae", // dark blue
