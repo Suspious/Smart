@@ -92,14 +92,14 @@ export const tokens = (mode) => ({
         },
         primary: {
           100: "#ffffff", // pure white
-          200: "#f2f2f2", // very light gray
+          200: "#241c1f", // very light gray
           300: "#004f9f", // light gray
           400: "#004f9f", // soft gray
           500: "#b3b3b3", // medium gray
-          600: "#999999", // darker gray
+          600: "#0b02cd", // darker gray
           700: "#808080", // deep gray
           800: "#666666", // darker gray
-          900: "#4d4d4d", // very dark gray // very dark gray
+          900: "#ed251c", // very dark gray // very dark gray
          
           
         },
