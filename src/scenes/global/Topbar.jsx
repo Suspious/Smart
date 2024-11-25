@@ -21,11 +21,11 @@ const Topbar = () => {
 
   const formatDate = (date) => {
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    return date.toLocaleDateString(undefined, options);
+    return date.toLocaleDateString("en-US", options); 
   };
-
+  
   const formatTime = (date) => {
-    return date.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    return date.toLocaleTimeString("en-US", { hour: '2-digit', minute: '2-digit', second: '2-digit' });
   };
 
   return (
