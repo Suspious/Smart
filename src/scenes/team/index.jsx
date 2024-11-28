@@ -57,8 +57,10 @@ const Team = () => {
                 variant="contained"
                 size="large"
                 sx={{
-                  backgroundColor: colors.primary[100],
-                  width: '20%', // Set width to make the button shorter
+                  backgroundColor: '#24292e',
+                  width: '25%', // Set width to make the button shorter
+                  height: '70px',
+                  fontSize: '18px',
                   borderRadius: '10px', // Make the button rounder
                   border: '0.1px light gray', // Add a light grey border
                   padding: '12px 24px', // Add some padding for a nice button shape
