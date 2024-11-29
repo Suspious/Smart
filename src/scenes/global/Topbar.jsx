@@ -19,14 +19,28 @@ const Topbar = () => {
     return () => clearInterval(timer); // Cleanup timer on unmount
   }, []);
 
-  const formatDate = (date) => {
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    return date.toLocaleDateString("en-US", options); 
+  const getOrdinalSuffix = (day) => {
+    if (day > 3 && day < 21) return "th"; // Handles 11th-13th
+    switch (day % 10) {
+      case 1: return "st";
+      case 2: return "nd";
+      case 3: return "rd";
+      default: return "th";
+    }
   };
-  
+
+  const formatDate = (date) => {
+    const weekday = date.toLocaleDateString("en-US", { weekday: "long" });
+    const day = date.getDate();
+    const month = date.toLocaleDateString("en-US", { month: "long" });
+    const year = date.getFullYear();
+    const ordinalSuffix = getOrdinalSuffix(day);
+    return `${weekday}, ${day}${ordinalSuffix} ${month} ${year}`;
+  };
+
   const formatTime = (date) => {
     return date.toLocaleTimeString("en-US", { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
-  };  
+  };
 
   return (
     <Box display="flex" justifyContent="space-between" p={2}>
