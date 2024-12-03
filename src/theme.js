@@ -106,8 +106,8 @@ export const tokens = (mode) => ({
         greenAccent: {
           100: "#004f9f", // very light blue
           200: "#1e54ae", // light blue
-          300: "#1e54ae", // soft blue
-          400: "#1e54ae", // pastel blue
+          300: "#004f9f", // soft blue
+          400: "#004f9f", // pastel blue
           500: "#fff", // vibrant blue
           600: "#1e54ae", // royal blue
           700: "#1e54ae", // deep blue
