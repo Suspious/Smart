@@ -20,13 +20,13 @@ const Dashboard = () => {
     MMSI: 245179000<br/>
     Call sign: PCRR<br/>
     Gross Tonnage: 19848<br/>
-    Summer DWT: 6500t<br/>
+    Summer DWT: 6500 t<br/>
     Length Overall x Breadth Extreme: 139.4 x 44.4 m
   `;
 
   const contactInfo = `
     <strong>Contact info:</strong><br/>
-    Van der Leun<br/>
+    Van der leun<br/>
     info@royalvanderleun.com<br/>
     +31 (0)184 413 288<br/>
     <a href="https://www.vanderleun.nl/nl/" target="_blank" rel="noopener noreferrer"style="color: Lightgray;">Website</a><br/>
@@ -37,7 +37,8 @@ const Dashboard = () => {
   const locationInfo = `
     <br/>
     <strong>Location:</strong><br/>
-    Position received: 2024-01-13 14:10 LT (UTC -5)<br/>
+    Position received: 13-01-2024<br/> 
+    Local Time: 14:10 (UTC -5)<br/>
     Area: USEC - US East Coast<br/>
     Navigational Status: Moored<br/>
     Speed/Course: 0 kn / 16 °<br/>
