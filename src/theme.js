@@ -93,19 +93,19 @@ export const tokens = (mode) => ({
         primary: {
           100: "#ffffff", // pure white
           200: "#241c1f", // very light gray
-          300: "#004f9f", // light gray
+          300: "#808080", // light gray
           400: "#004f9f", // soft gray
           500: "#b3b3b3", // medium gray
           600: "#0b02cd", // darker gray
           700: "#808080", // deep gray
           800: "#666666", // darker gray
-          900: "#ed251c", // very dark gray // very dark gray
+          900: "#b3b3b3", // very dark gray // very dark gray
          
           
         },
         greenAccent: {
           100: "#004f9f", // very light blue
-          200: "#1e54ae", // light blue
+          200: "#004f9f", // light blue
           300: "#004f9f", // soft blue
           400: "#004f9f", // pastel blue
           500: "#fff", // vibrant blue
