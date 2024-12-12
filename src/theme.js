@@ -105,13 +105,13 @@ export const tokens = (mode) => ({
         },
         greenAccent: {
           100: "#004f9f", // very light blue
-          200: "#004f9f", // light blue
-          300: "#004f9f", // soft blue
-          400: "#004f9f", // pastel blue
+          200: "#db4f4a", // light blue
+          300: "#0b02cd", // soft blue
+          400: "#9b2525", // pastel blue
           500: "#fff", // vibrant blue
           600: "#1e54ae", // royal blue
           700: "#1e54ae", // deep blue
-          800: "#1e54ae", // dark blue
+          800: "#808080", // dark blue
           900: "#1e54ae", // navy blue
         },
         redAccent: {
@@ -127,7 +127,7 @@ export const tokens = (mode) => ({
         },
         blueAccent: {
           100: "#1e54ae", // very light blue
-          200: "#1e54ae", // light blue
+          200: "#e67272", // light blue
           300: "#1e54ae", // soft blue
           400: "#000000", // pastel blue
           500: "#EE7202", // vibrant blue
