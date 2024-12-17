@@ -44,7 +44,7 @@ const Sidebar = () => {
         height: "100vh", // Full height of the viewport
         "& .pro-sidebar-inner": {
           background: colors.primary[300],
-          width: isCollapsed ? "80px" : "250px", // Adjusted sidebar width
+          width: isCollapsed ? "80px" : "270px", // Adjusted sidebar width
         },
         "& .pro-icon-wrapper": {
           backgroundColor: "transparent !important",
@@ -78,7 +78,7 @@ const Sidebar = () => {
                 alignItems="center"
                 ml="15px"
               >
-                <Typography variant="h5" color={colors.text[100]} fontSize="20px"> {/* Adjusted font size */}
+                <Typography variant="h5" color={colors.text[100]} fontSize="21px"> {/* Adjusted font size */}
                   Van der Leun
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
